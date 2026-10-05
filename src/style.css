@@ -1,0 +1,134 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light;
+  color: #212529;
+  background-color: #f4f6f8;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+}
+
+#app {
+  width: 100%;
+  max-width: 480px;
+  margin: 0 auto;
+  background: #ffffff;
+  min-height: 100vh;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  background: linear-gradient(135deg, #16a34a, #15803d);
+  color: white;
+  padding: 20px 16px;
+  position: relative;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header h2 {
+  margin: 0;
+  font-size: 1.4rem;
+}
+
+.header p {
+  margin: 4px 0 0 0;
+  font-size: 0.85rem;
+  opacity: 0.9;
+}
+
+.content {
+  padding: 16px;
+  flex: 1;
+}
+
+.card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
+}
+
+.card h3 {
+  margin-top: 0;
+  margin-bottom: 8px;
+  color: #111827;
+}
+
+.card h4 {
+  margin: 0;
+  color: #16a34a;
+}
+
+.card p {
+  margin: 0;
+  color: #4b5563;
+  font-size: 0.9rem;
+}
+
+.btn {
+  display: inline-block;
+  width: 100%;
+  padding: 12px 16px;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  transition: background 0.2s;
+  box-sizing: border-box;
+}
+
+.primary-btn {
+  background-color: #16a34a;
+  color: white;
+}
+
+.primary-btn:hover {
+  background-color: #15803d;
+}
+
+.secondary-btn {
+  background-color: #e5e7eb;
+  color: #374151;
+}
+
+.secondary-btn:hover {
+  background-color: #d1d5db;
+}
+
+.back-btn {
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 0.9rem;
+  cursor: pointer;
+  padding: 0 0 8px 0;
+  display: block;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="number"],
+textarea {
+  box-sizing: border-box;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+input:focus, textarea:focus {
+  border-color: #16a34a;
+}
