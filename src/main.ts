@@ -1544,7 +1544,14 @@ async function renderBuyerDashboard() {
           </div>
         </div>
         <div style="margin-top: 12px;">
-          <button class="btn primary-btn accept-scrap-btn" data-id="${b.id}" style="width: 100%; padding: 8px; font-size: 13px;">Accept Scrap & Pay ₹${finalPayable.toFixed(2)}</button>
+          ${(b.status === 'Collected' || b.status === 'completed')
+  ? `<button disabled style="width: 100%; padding: 10px; font-size: 14px; font-weight: bold; background: #6b7280; color: #ffffff; border: none; border-radius: 8px; cursor: not-allowed;">
+      ✅ Completed
+     </button>`
+  : `<button class="btn primary-btn accept-scrap-btn" data-id="${b.id}" style="width: 100%; padding: 10px; font-size: 14px; font-weight: bold; background: #16a34a; color: white; border: none; border-radius: 8px;">
+      Accept Scrap & Pay ₹${finalPayable.toFixed(2)}
+     </button>`}
+
         </div>
       </div>`;
     }).join('');
